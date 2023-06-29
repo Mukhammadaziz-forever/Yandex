@@ -1,0 +1,178 @@
+body {
+    font-family: sans-serif;
+    background-image: url(https://static.wixstatic.com/media/c837a6_831fe7c79e9e45869554588550034ac1~mv2.jpg/v1/fill/w_1903,h_1081,al_b,q_90,usm_0.66_1.00_0.01,enc_auto/c837a6_831fe7c79e9e45869554588550034ac1~mv2.jpg) ;
+}
+
+header img {
+    height: 70px;
+    width: 70px;
+    margin: 10px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    background-image: url(https://static.wixstatic.com/media/84770f_3eb255885dbb486790bc704b248e6860~mv2.jpg/v1/fill/w_1903,h_405,al_b,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_3eb255885dbb486790bc704b248e6860~mv2.jpg);
+    margin: -10px -10px 10px -10px ;
+    
+}
+
+header div {
+    display: block;
+}
+
+button {
+ --glow-color: rgb(217, 176, 255);
+ --glow-spread-color: rgba(191, 123, 255, 0.781);
+ --enhanced-glow-color: rgb(231, 206, 255);
+ --btn-color: rgb(100, 61, 136);
+ border: .25em solid var(--glow-color);
+ padding: 1em 3em;
+ color: var(--glow-color);
+ font-size: 15px;
+ font-weight: bold;
+ background-color: var(--btn-color);
+ border-radius: 1em;
+ outline: none;
+ box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 1em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+ text-shadow: 0 0 .5em var(--glow-color);
+ position: relative;
+ transition: all 0.3s;
+ margin: 20px;
+}
+
+button::after {
+ pointer-events: none;
+ content: "";
+ position: absolute;
+ top: 120%;
+ left: 0;
+ height: 100%;
+ width: 100%;
+ background-color: var(--glow-spread-color);
+ filter: blur(2em);
+ opacity: .7;
+ transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+
+button:hover {
+ color: var(--btn-color);
+ background-color: var(--glow-color);
+ box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 2em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+}
+
+button:active {
+ box-shadow: 0 0 0.6em .25em var(--glow-color),
+        0 0 2.5em 2em var(--glow-spread-color),
+        inset 0 0 .5em .25em var(--glow-color);
+}
+
+.dd {
+    display: flex;
+}
+
+.pp {
+    color: white;
+    margin: 90px 0px 0px 190px  ;
+    font-size: 34px;
+
+}
+
+.dd img {
+    height: 300px;
+    width: 300px;
+    margin-left: 150px;
+}
+
+.ddd {
+    display: flex;
+}
+
+.ddd img {
+    height: 220px;
+    width: 200px;
+    margin-left: 150px;
+}
+
+.ddd p {
+    color: white;
+    margin: 90px 0px 0px 190px  ;
+    font-size: 34px;
+}
+
+.dddd {
+    display: flex;
+    justify-content: space-around;
+}
+
+.vd {
+    height: 170px;
+    width: 150px;
+    margin-left: 50px;
+    rotate: -9deg;
+    text-align: left;
+}
+
+.vvd {
+    height: 170px;
+    width: 150px;
+    margin-left: 50px;
+    rotate: 0deg;
+    text-align: center;
+}
+
+.vvvd {
+        height: 170px;
+    width: 150px;
+    margin-left: 50px;
+    rotate: 9deg;
+    text-align: right;
+}
+
+.button {
+    text-align: center;
+    margin-left: 400px;
+}
+
+.input {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 1em 0 1em 0;
+  max-width: 190px;
+  position: relative;
+}
+
+.input input {
+  font-size: 100%;
+  padding: 0.8em;
+  outline: none;
+  border: 2px solid rgb(141, 109, 255);
+  background-color: transparent;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.input label {
+  font-size: 100%;
+  position: absolute;
+  left: 0;
+  padding: 0.8em;
+  margin-left: 0.5em;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  color: rgb(255, 255, 255);
+}
+
+.input :is(input:focus, input:valid)~label {
+  transform: translateY(-50%) scale(.9);
+  margin: 0em;
+  margin-left: 1.3em;
+  padding: 0.4em;
+  background-color: #212121;
+}
+
+.inputGroup :is(input:focus, input:valid) {
+  border-color: rgb(37, 37, 211);
+}
